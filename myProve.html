@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-2 retina android android-6 android-6-0">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的实名证实列表</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <link rel="shortcut icon" href="http://staticcdn2.zhongtuobang.com/img/ico/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+
+    <!-- SUI CSS -->
+    <link href="css/start/sm.min.css" rel="stylesheet">
+    <link href="css/start/sm-extend.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/start/ztb-wx-common.css" rel="stylesheet">
+
+    <!-- Bbc CSS -->
+    <link href="css/start/ztb-wx-bbc.css" rel="stylesheet">
+
+    <!-- viewer CSS -->
+    <link href="css/start/viewer.min.css" rel="stylesheet">
+
+    <!-- animate CSS -->
+    <link href="css/start/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/start/font-awesome.min.css" rel="stylesheet">
+
+    <!-- SUI JS -->
+    <script src="js/start/hm.js"></script>
+	<script src="js/start/zepto.min.js"></script>
+
+    <!-- viewer JS -->
+    <script src="js/start/viewer.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/start/ztb-wx-common.js"></script>
+    <!-- Bbc JS -->
+    <script src="js/start/ztb-wx-bbc.js"></script>
+
+</head>
+
+<body>
+    <div class="page-group">
+            
+<div>
+      <div class="content" style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%;">
+      <div class="content-padded">
+        <div style="text-align: center;line-height: 20px;margin-top: 80px;">
+          <div class="error" style="font-size: 15px;max-width: 100%;line-height: 40px;text-align: center;margin: 0px;padding: 20px;color:#333">
+            当前暂无证实内容
+          </div>
+        </div>
+        <div style="text-align: center;line-height: 20px;margin-top: 80px;">
+          <p><img src="images/bbc2-watermark.png" style="width: 6rem;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+var subtitle = "我的实名证实列表";
+$("a").each(function(){
+  var v = $(this).attr("href");
+  if(v.indexOf("javascript")==0){
+  }
+  else if(v.indexOf("#")==0){
+  }
+  else if(v.indexOf("tel")==0){
+  }
+  else if(v.indexOf("back=")>0){
+  }
+  else if(v.indexOf("?")>0){
+    $(this).attr("href",v+"&back="+subtitle);
+  }
+  else{
+    $(this).attr("href",v+"?back="+subtitle);
+  }
+});
+
+$(function () {
+  //$.init();
+});
+</script>
+<script type="text/javascript">
+  $('.deleteProve').on('click',function () {
+    var parentID = $(this).attr('proveID');
+    _this = $(this);
+    $.modal({
+      text:
+        '是否删除该证实',
+      buttons: [
+        {
+          text: '取消',
+        },
+        {
+          text: '确定',
+          bold:true,
+          onClick: function() {
+            var args = {
+              parentID: parentID,
+            }
+            //保存回复
+            $.post('/bbc/deleteProve',args,function(result){
+              if(result.success)
+              {
+                $.toast("删除成功！");
+                _this.parent().parent().remove();
+              }
+              else
+              {
+                $.toast(result.message);
+              }
+            },'json');
+          }
+        },
+      ],
+    });
+  })
+</script>    </div>
+
+    
+<script type="text/javascript" src="js/start/sm.min.js"></script>
+<script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+</body></html>

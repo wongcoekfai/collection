@@ -1,0 +1,11 @@
+.impowerBox .title {display: none;}
+.qrcode.qrcode{
+    padding: 1px;
+    width: 278px;
+}
+body{
+    margin-top:0
+}
+iframe{
+    width: 382px;
+}

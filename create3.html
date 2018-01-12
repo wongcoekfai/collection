@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-2 retina android android-6 android-6-0">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>诊断证明</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://staticcdn2.zhongtuobang.com/img/ico/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+
+    <!-- SUI CSS -->
+    <link href="css/start/sm.min.css" rel="stylesheet">
+    <link href="css/start/sm-extend.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/start/ztb-wx-common.css" rel="stylesheet">
+
+    <!-- Bbc CSS -->
+    <link href="css/start/ztb-wx-bbc.css" rel="stylesheet">
+
+    <!-- viewer CSS -->
+    <link href="css/start/viewer.min.css" rel="stylesheet">
+
+    <!-- animate CSS -->
+    <link href="css/start/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/start/font-awesome.min.css" rel="stylesheet">
+
+    <!-- SUI JS -->
+    <script src="js/start/hm.js"></script>
+	<script src="js/start/zepto.min.js"></script>
+
+    <!-- viewer JS -->
+    <script src="js/start/viewer.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="js/start/ztb-wx-common.js"></script>
+    <!-- Bbc JS -->
+    <script src="js/start/ztb-wx-bbc.js"></script>
+	
+</head>
+
+<body>
+    <div class="page-group">
+            <script src="js/start/jquery-1.11.0.js"></script>
+<link rel="stylesheet" href="css/start/webuploader.css">
+<link rel="stylesheet" href="css/start/create4.css">
+<script src="js/start/webuploader.js"></script>
+<form enctype="multipart/form-data" id="bbc-form" action="https://bbc.zhongtuobang.com/bbc/create4?id=7910&amp;back=%E7%BC%96%E8%BE%91%E7%AD%B9%E6%AC%BE" method="post"><div class="bbc2-top1">
+  <img src="images/bbc2-top1.png" alt="" width="5%" style="vertical-align: text-bottom">
+  <span>以下信息(姓名除外)，仅用于平台审核，不对外公开</span>
+</div>
+<div>
+  <div class="content" style="overflow-x: hidden;margin-top: 1rem;">
+    <div class="list-block" style="margin-top:.5rem;margin-bottom:0">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                <img class="list-title-icon" src="images/bbc2-create3-icon1.png" alt="" width="14px">
+                <span class="list-title-font">患者信息</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">所患疾病</div>
+              <div class="item-input">
+                <input class="font-14 createSubmit" type="text" placeholder="请填写所患疾病名称" id="Bbc_disease" name="Bbc[disease]" style="font-size:14px;" value="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">医院地址</div>
+              <div class="item-input">
+                <div style="position: relative;">
+                  <a href="javascript:void(0)" class="tjOnClick">
+					<input type="text" placeholder="请填写医院地址" id="Bbc_address" name="Bbc[doctor]" style="font-size:14px;" value="">
+				  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">就诊医院名称</div>
+              <div class="item-input">
+                <a href="javascript:void(0)" class="jumpHospital" external="">
+                <input type="text" placeholder="请填写就诊医院名称" id="Bbc_doctor" name="Bbc[doctor]" style="font-size:14px;" value="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="list-block" style="margin-top:1rem;margin-bottom:0">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                <img class="list-title-icon" src="images/bbc2-create3-icon8.png" alt="" width="14px">
+                <span class="list-title-font">诊断证明（限1张）</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="content-padded" style="margin: 0;">
+              <div id="uploader-demo">
+                <!--用来存放item-->
+                <div id="fileList" class="uploader-list">
+                  <img class="uploadDiagnosis" src="images/bbc2-create3-diagnosis.png" style="width: 3.8rem;float: left;margin-right: 7px;">
+	                                </div>
+              </div>
+              <div class="panel-body demo-panel-files" style="display: inline">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="list-block" style="margin-top:1rem;margin-bottom:0">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                <img class="list-title-icon" src="images/bbc2-create3-icon9.png" alt="" width="14px">
+                <span class="list-title-font">补充材料（四选一）</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                <div class="button button-sm list-title-font-s" data-index="0" style="background-color: #2097FF;color: #fff;">检查报告</div>
+                <div class="button button-sm list-title-font-s interval" data-index="1"> 病历 </div>
+                <div class="button button-sm list-title-font-s interval" data-index="2">住院证明</div>
+                <div class="button button-sm list-title-font-s interval" data-index="3">收费票据</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="content-padded" style="margin: 0;">
+              <div id="uploader-demo">
+                <!--用来存放item-->
+                <div id="fileList_1" class="uploader-list">
+                  <img class="uploadSupply" src="images/bbc2-create3-supply.png" style="width: 3.8rem;float: left;margin-right: 7px;">
+                  <img class="uploadSupply" src="images/bbc2-create3-zy.png" style="width: 3.8rem;float: left;margin-right: 7px;display: none;">
+                  <img class="uploadSupply" src="images/bbc2-create3-bl.png" style="width: 3.8rem;float: left;margin-right: 7px;display: none;">
+                  <img class="uploadSupply" src="images/bbc2-create3-sf.png" style="width: 3.8rem;float: left;margin-right: 7px;display: none;">
+	                                </div>
+              </div>
+              <!-- /D&D Zone -->
+              <div class="panel-body demo-panel-files">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner" style="font-size: 0.8em;color: #666666;">
+              <div class="content-padded" style="margin-right: 0rem;">
+                <div class="row">
+                  <div class="col-10">
+                    <span style="color: #E13A2A;font-size: 16px;">*</span>
+                  </div>
+                  <div class="col-90" style="margin-left: -.5rem;">
+                    <span>请上传检查报告、病例、入院证明首页、收费票据等证明材料，以帮助提升审核通过率，所有材料照片均需有医院公章。</span><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="row" style="padding: 1rem">
+      <div class="col-100 tjOnClick" tj-data="bbc_click_create4_save" id="btnSubmit">
+        <div class="button button-big btnSave">保存</div>
+      </div>
+      <div class="content-padded col-100" style="text-align:center;margin-bottom: 1.5rem;">
+        <span class="font-14"> 筹款遇到问题？微信联系筹款顾问：</span><span style="color:#35A0FB;font-size: .6rem;" class="ztbbc tjOnClick" tj-data="bbc_click_create4_service"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="display: none;"><img src="images/bbc-up.png" alt=""> <img src="images/bbc-down.png" alt=""> </div>
+
+<div class="mask hide"></div>
+<div id="modals-contain-id" class="modals-contain hide">
+  <div class="work-box">
+    <div class="upload-cancel">
+      <img src="images/bbc2-create3-cancel.png" alt="">
+    </div>
+    <div class="modals-title">诊断证明示例</div>
+    <div class="modals-text">
+      <div class="supply">
+        <div class="row" style="margin-bottom: .5rem;">
+          <div class="col-10">
+            <span class="spot">•</span>
+          </div>
+          <div class="col-90" style="margin: 0">
+            <span class="text">患者在医院近半年内开具的有患者姓名的，且有明确的疾病诊断、且加盖医院公章的证明资料原件的照片。</span>
+          </div>
+        </div>
+        <img src="images/bbc2-create3-zdzm.png" alt="" width="100%">
+      </div>
+      <div style="text-align: center;margin: 5px 0 8px 0;">
+        <span class="spot">*</span><span class="text">如有模糊、遮挡，则审核不予通过。</span>
+      </div>
+      <div id="uploader-demo">
+        <!--用来存放item-->
+        <div id="filePicker">
+          <img src="images/bbc2-create3-button.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modals-contain-supply" class="modals-contain hide">
+  <div class="work-box">
+    <div class="upload-cancel">
+      <img src="images/bbc2-create3-cancel.png" alt="">
+    </div>
+    <div class="modals-title">检查报告</div>
+    <div class="modals-text">
+      <div class="supply">
+        <div class="row" style="margin-bottom: .5rem;">
+          <div class="col-10">
+            <span class="spot">•</span>
+          </div>
+          <div class="col-90" style="margin: 0">
+            <span class="text">患者在医院近半年内开具的、有患者姓名、且有明确的检查结果且加盖医院公章的检查报告原件照片。</span>
+          </div>
+        </div>
+        <img class="demoImg" src="images/bbc2-create3-jcbg.png" alt="" width="100%">
+        <img class="hide demoImg" src="images/bbc2-create3-bltp.png" alt="" width="100%">
+        <img class="hide demoImg" src="images/bbc2-create3-cyzm.png" alt="" width="100%">
+        <img class="hide demoImg" src="images/bbc2-create3-sfpj.png" alt="" width="100%">
+      </div>
+      <div style="text-align: center;margin: 5px 0 8px 0;">
+        <span class="spot">*</span><span class="text">如有模糊、遮挡，则审核不予通过。</span>
+      </div>
+      <div id="uploader-demo">
+        <!--用来存放item-->
+        <div id="filePicker_1">
+          <img src="images/bbc2-create3-button.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</form><script>
+
+$('.ztbbc').on('click',function () {
+  dialog = $.modal({
+    text: '<p style="margin-top:.5em;font-size: ;color:#999999;">长按识别二维码，添加微信客服</p><div><img class="closeAlert" src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-ztbbc.png" width="100%"></div>',
+  });
+  $('.modal-inner').css({'padding-top':'.5em','background':'#fff'});
+  $('.modal-in').css('margin-top',' -150px;');
+  $('.closeAlert').click(function(){
+    $.closeModal(dialog);
+  });
+})
+
+
+function validateComment(){
+  
+
+  //检查受助人身份证照片
+  var hasPhoto1;
+  $.ajax({
+    url: '/bbc/hasPhoto',
+    async: false,
+    type: 'GET',
+    dataType: 'json',
+    data: {'id': 7910,'picType': 2},
+    success: function(result) {
+      hasPhoto1 = result;
+    }
+  });
+  // if(hasPhoto1==false){
+  //   alert("请添加身份证照片");
+  // }
+
+  if($("#Bbc_disease").val()==""){
+    $.toast("请填写疾病名称");
+    return false;
+  }
+  if($("#Bbc_hospitalPosition").val()==""){
+    $.toast("请填写医院所在地址");
+    return false;
+  }
+  if($("#Bbc_doctor").val()==""){
+    $.toast("请填写就诊医院名称");
+    return false;
+  }
+
+  //检查医疗证明照片
+  var hasPhoto2;
+  $.ajax({
+    url: '/bbc/hasPhoto',
+    async: false,
+    type: 'GET',
+    dataType: 'json',
+    data: {'id': 7910,'picType': 3},
+    success: function(result) {
+      hasPhoto2 = result;
+    }
+  });
+  //检查补充说明照片
+  var hasPhoto3;
+  $.ajax({
+    url: '/bbc/hasPhoto',
+    async: false,
+    type: 'GET',
+    dataType: 'json',
+    data: {'id': 7910,'picType': 4},
+    success: function(result) {
+      hasPhoto3 = result;
+    }
+  });
+   if(hasPhoto2==false){
+     $.toast("请添加诊断证明照片");
+     return false;
+   }
+   if(hasPhoto3==false){
+     $.toast("请添加补充说明照片");
+     return false;
+   }
+
+
+  return true;
+}
+
+$('#btnSubmit').click(function () {
+
+  if(validateComment()){
+//    $(this).attr("class","button button-big button-fill button-round button-light");
+    $(this).closest('form').submit();
+  }
+
+});
+
+$('.jumpHospital').on('click',function () {
+  if('' == '' || '' == ''){
+    $.toast('请选择医院地址！');
+  }else{
+    location.href = '/bbc/hospital?id=7910&postID=';
+  }
+})
+
+var subtitle = "诊断证明";
+$("a").each(function(){
+  var v = $(this).attr("href");
+  if(v.indexOf("javascript")==0){
+  }
+  else if(v.indexOf("#")==0){
+  }
+  else if(v.indexOf("tel")==0){
+  }
+  else if(v.indexOf("back=")>0){
+  }
+  else if(v.indexOf("?")>0){
+    $(this).attr("href",v+"&back="+subtitle);
+  }
+  else{
+    $(this).attr("href",v+"?back="+subtitle);
+  }
+});
+$.noConflict();
+
+$(function () {
+  //$.init();
+
+});
+
+$('.createSubmit').on('blur',function () {
+  var json_data = {
+    'bbcID':7910,
+    'disease':$('#Bbc_disease').val(),
+    'doctor':$('#Bbc_doctor').val(),
+  }
+  $.ajax({
+    type:'post',
+    dataType:'json',
+    url:'/bbc/apiSaveCreate4',
+    data:json_data,
+    success:function () {
+    
+    },
+    error:function () {
+    
+    }
+  });
+})
+
+$(document).on('click','.cszm', function () {
+    dialog = $.modal({
+        text: '<img src="https://staticcdn2.zhongtuobang.com/img/bbc/cszm.jpg" width="100%">',
+        verticalButtons: true,
+    })
+    $('.modal-inner').css({'padding':0,'background':'rgba(0,0,0,0)'});
+    $('.modal-in').css('margin-top',' -110px;');
+    $('.modal-inner').on('click',function () {
+        $.closeModal(dialog);
+    })
+});
+$(document).on('click','#AddConstraction',function () {
+   if($(this).children().children().children().children().children().children().first().attr('src') == 'https://staticcdn2.zhongtuobang.com/img/bbc/bbc-down.png'){
+     $(this).children().children().children().children().children().children().first().attr('src','https://staticcdn2.zhongtuobang.com/img/bbc/bbc-up.png');
+     $(this).next().show();
+     $(this).next().next().show();
+   }else{
+     $(this).children().children().children().children().children().children().first().attr('src','https://staticcdn2.zhongtuobang.com/img/bbc/bbc-down.png');
+     $(this).next().hide();
+     $(this).next().next().hide();
+   }
+   
+})
+
+</script>
+
+<script type="text/javascript">
+//编辑图片
+//    jQuery('.reload').on('click',function () {
+//       window.location.reload();
+//    })
+</script>
+
+<script type="text/javascript">
+  var supplyImage = false;
+  var DiagnosisImage = false;
+  function createDiagnosisImage() {
+    //####****************************上传医疗证明图片****************************####//
+
+    var _WebUpload_1 = jQuery,
+      $list_1 = _WebUpload_1('#fileList'),
+      // 优化retina, 在retina下这个值是2
+      ratio = window.devicePixelRatio || 1,
+
+      // 缩略图大小
+      thumbnailWidth = 100 * ratio,
+      thumbnailHeight = 100 * ratio,
+
+      // Web Uploader实例
+      uploader_2;//上传医疗证明图片
+    // 初始化Web Uploader
+    uploader_2 = WebUploader.create({
+
+      // 自动上传。
+      auto: true,
+      // 文件接收服务端。
+      server: '/bbc/fileupload',
+
+      // 选择文件的按钮。可选。
+      // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+      pick: {
+        id:'#filePicker',
+        multiple:true,
+      },
+      duplicate:true,
+      threads:1,
+      fileNumLimit:6,
+      formData:{
+        bbcID: 7910,
+        imageType: 3,//上传医疗证明图片
+      },
+      // 只允许选择文件，可选。
+      accept: {
+        title: 'Images',
+        extensions: 'gif,jpg,jpeg,bmp,png',
+//          mimeTypes: 'image/*,text/plain,application/msword,application/octet-stream,application/vnd.ms-excel,application/x-shockwave-flash'
+      }
+    });
+
+    // 当有文件添加进来的时候
+    uploader_2.on( 'fileQueued', function( file ) {
+      $('.mask').addClass('hide');
+      $('#modals-contain-id').addClass('hide');
+      var $li = _WebUpload_1(
+          '<div id="' + file.id + '" class="file-item thumbnail">' +
+          '<img>' +
+          '<div class="info">' + file.name + '</div>' +
+          '<div class="cancel" imageType="medical">'+
+          '<img src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-delete.png" alt="" width="100%"></div>'
+        ),
+        $img = $li.find('img').first();
+
+      $list_1.append( $li );
+
+      // 创建缩略图
+      uploader_2.makeThumb( file, function( error, src ) {
+        if ( error ) {
+          $img.replaceWith('<span>不能预览</span>');
+          return;
+        }
+
+        $img.attr( 'src', src );
+      }, thumbnailWidth, thumbnailHeight );
+    });
+
+    // 文件上传过程中创建进度条实时显示。
+    uploader_2.on( 'uploadProgress', function( file, percentage ) {
+      var $li = _WebUpload_1( '#'+file.id ),
+        $percent = $li.find('.progress span');
+
+      // 避免重复创建
+      if ( !$percent.length ) {
+        $percent = _WebUpload_1('<p class="progress"><span></span></p>')
+          .appendTo( $li )
+          .find('span');
+      }
+
+      $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader_2.on( 'uploadSuccess', function( file , response) {
+      _WebUpload_1( '#'+file.id ).addClass('upload-state-done');
+      _WebUpload_1( '#'+file.id ).children().filter('.cancel').attr('imageid',response.bbcImageID);
+      if(response.type == '0'){
+        _WebUpload_1( '#'+file.id ).find('.info').html('分享封面图');
+      }
+      if(response.success == false){
+        _WebUpload_1( '#'+file.id ).remove();
+        $.toast(response.message);
+      }
+    });
+
+    // 文件上传失败，现实上传出错。
+    uploader_2.on( 'uploadError', function( file ) {
+      var $li = _WebUpload_1( '#'+file.id ),
+        $error = $li.find('div.error');
+
+      // 避免重复创建
+      if ( !$error.length ) {
+        $error = _WebUpload_1('<div class="error"></div>').appendTo( $li );
+      }
+
+      $error.text('上传失败');
+    });
+    uploader_2.on('error',function (resule) {
+      if(resule == 'Q_EXCEED_NUM_LIMIT'){
+        $.toast('超出图片上传限制！');
+        return false;
+      }
+    })
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploader_2.on( 'uploadComplete', function( file ) {
+      _WebUpload_1( '#'+file.id ).find('.progress').remove();
+      uploader_2.refresh();
+
+    });
+    DiagnosisImage = true;
+  }
+
+  //#####*********************上传补充说明************************#####//
+  function createSupplyImage(){
+    var _WebUpload_2 = jQuery,
+      $list_2 = _WebUpload_2('#fileList_1'),
+      // 优化retina, 在retina下这个值是2
+      ratio = window.devicePixelRatio || 1,
+
+      // 缩略图大小
+      thumbnailWidth = 100 * ratio,
+      thumbnailHeight = 100 * ratio,
+
+      // Web Uploader实例
+      uploader_3;//上传医疗证明图片
+    // 初始化Web Uploader
+    uploader_3 = WebUploader.create({
+
+      // 自动上传。
+      auto: true,
+      // 文件接收服务端。
+      server: '/bbc/fileupload',
+
+      // 选择文件的按钮。可选。
+      // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+      pick: {
+        id:'#filePicker_1',
+        multiple:true,
+      },
+      duplicate:true,
+      threads:3,
+      fileNumLimit:3,
+      formData:{
+        bbcID: 7910,
+        imageType: 4,//上传补充说明图片
+      },
+      // 只允许选择文件，可选。
+      accept: {
+        title: 'Images',
+        extensions: 'gif,jpg,jpeg,bmp,png',
+//          mimeTypes: 'image/*,text/plain,application/msword,application/octet-stream,application/vnd.ms-excel,application/x-shockwave-flash'
+      }
+    });
+
+    // 当有文件添加进来的时候
+    uploader_3.on( 'fileQueued', function( file ) {
+      $('.mask').addClass('hide');
+      $('#modals-contain-supply').addClass('hide');
+      var $li = _WebUpload_2(
+          '<div id="' + file.id + '" class="file-item thumbnail">' +
+          '<img>' +
+          '<div class="info">' + file.name + '</div>' +
+          '<div class="cancel" imageType="other">'+
+          '<img src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-delete.png" alt="" width="100%"></div>'
+        ),
+        $img = $li.find('img').first();
+
+      $list_2.append( $li );
+
+      // 创建缩略图
+      uploader_3.makeThumb( file, function( error, src ) {
+        if ( error ) {
+          $img.replaceWith('<span>不能预览</span>');
+          return;
+        }
+
+        $img.attr( 'src', src );
+      }, thumbnailWidth, thumbnailHeight );
+    });
+
+    // 文件上传过程中创建进度条实时显示。
+    uploader_3.on( 'uploadProgress', function( file, percentage ) {
+      var $li = _WebUpload_2( '#'+file.id ),
+        $percent = $li.find('.progress span');
+
+      // 避免重复创建
+      if ( !$percent.length ) {
+        $percent = _WebUpload_2('<p class="progress"><span></span></p>')
+          .appendTo( $li )
+          .find('span');
+      }
+
+      $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader_3.on( 'uploadSuccess', function( file , response) {
+      _WebUpload_2( '#'+file.id ).addClass('upload-state-done');
+      _WebUpload_2( '#'+file.id ).children().filter('.cancel').attr('imageid',response.bbcImageID);
+      if(response.type == '0'){
+        _WebUpload_2( '#'+file.id ).find('.info').html('分享封面图');
+      }
+      if(response.success == false){
+        _WebUpload_2( '#'+file.id ).remove();
+        $.toast(response.message);
+      }
+    });
+
+    // 文件上传失败，现实上传出错。
+    uploader_3.on( 'uploadError', function( file ) {
+      var $li = _WebUpload_2( '#'+file.id ),
+        $error = $li.find('div.error');
+
+      // 避免重复创建
+      if ( !$error.length ) {
+        $error = _WebUpload_2('<div class="error"></div>').appendTo( $li );
+      }
+
+      $error.text('上传失败');
+    });
+    uploader_3.on('error',function (resule) {
+      if(resule == 'Q_EXCEED_NUM_LIMIT'){
+        $.toast('超出图片上传限制！');
+        return false;
+      }
+    })
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploader_3.on( 'uploadComplete', function( file ) {
+      _WebUpload_2( '#'+file.id ).find('.progress').remove();
+      uploader_3.refresh();
+    });
+    supplyImage = true;
+  }
+
+  $('.uploadDiagnosis').on('click',function () {
+    if(imgNumLimit(1,'medical') == true){
+      return false;
+    }
+    if(DiagnosisImage == false){
+      createDiagnosisImage();
+    }
+    $(".mask").removeClass("hide");
+    $("#modals-contain-id").removeClass("hide");
+  });
+  
+  $('.uploadSupply').on('click',function () {
+    if(imgNumLimit(3,'other') == true){
+      return false;
+    }
+    if(supplyImage == false){
+      createSupplyImage();
+    }
+    $(".mask").removeClass("hide");
+    $("#modals-contain-supply").removeClass("hide");
+  });
+  //******************************删除图片******************************//
+  $('.cancel').live('click',function () {
+      var bbcvideoID = $(this).attr('imageid');
+      var _this = jQuery(this);
+      $.ajax({
+          url:'/bbc/deleteImg',
+          data:{'bbcimageID':bbcvideoID},
+          type:'POST',
+          success:function (data) {
+              _this.parent().remove();
+              $.toast('文件删除成功');
+              var dataObj=eval("("+data+")");
+              $(".cancel[imageid='"+dataObj.mainImgID+"']").prev().html('分享封面图');
+              console.log(parseInt(_this.parent().attr('id').replace(/[^0-9]/ig,"")));
+              if(_this.attr('imageType') == 'idCard'){
+                  console.log('看得懂？！');
+                  uploader_1.removeFile(_this.parent().attr('id'),true);
+              }else if(_this.attr('imageType') == 'medical'){
+                  console.log('看得懂？！');
+                  uploader_2.removeFile(_this.parent().attr('id'),true);
+              }else if(_this.attr('imageType') == 'other'){
+                  console.log('看得懂？！');
+                  uploader_3.removeFile(_this.parent().attr('id'),true);
+              }
+              
+          },
+          error:function (data) {
+              $.toast('文件删除失败');
+          }
+      })
+  });
+  $('.reloadCancel').on('click',function () {
+      var bbcvideoID = $(this).prev().attr('id');
+      var _this = $(this);
+      $.ajax({
+          url:'/bbc/deleteImg',
+          data:{'bbcimageID':bbcvideoID},
+          type:'POST',
+          success:function (data) {
+              _this.parent().remove();
+              $.toast('文件删除成功');
+
+          },
+          error:function (data) {
+              $.toast('文件删除失败');
+          }
+      })
+  });
+  $('.list-title-font-s').on('click',function () {
+    var index = $(this).attr('data-index');
+    $('.list-title-font-s').each(function () {
+      $(this).css('color','#2097FF');
+      $(this).css('background-color','#fff');
+    });
+    $(this).css('color','#fff');
+    $(this).css('background-color','#2097FF');
+    $('.uploadSupply').each(function () {
+      $(this).css('display','none');
+    })
+    $('.uploadSupply').eq(index).css('display','block');
+    $('.demoImg').each(function () {
+      $(this).addClass('hide');
+    })
+    $('.demoImg').eq(index).removeClass('hide');
+    switch (index)
+    {
+      case '0':
+        $('#modals-contain-supply').children().children('.modals-title').html('检查报告');
+        $('#modals-contain-supply').children().children('.modals-text').children('.supply').children('.text').html('患者在医院近半年内开具的、有患者姓名、且有明确的检查结果且加盖医院公章的检查报告原件照片。');
+        break;
+      case '1':
+        $('#modals-contain-supply').children().children('.modals-title').html('病历示例');
+        $('#modals-contain-supply').children().children('.modals-text').children('.supply').children('.text').html('患者在医院近半年内开具的、有患者姓名、由医院开具并加盖医院公章的病历原件照片。');
+        break;
+      case '2':
+        $('#modals-contain-supply').children().children('.modals-title').html('住院证明示例');
+        $('#modals-contain-supply').children().children('.modals-text').children('.supply').children('.text').html('患者在医院近半年内开具的、有患者姓名、注明患者病情信息且加盖医院公章的住院证明（包括出入院证明等）原件照片。');
+        break;
+      case '3':
+        $('#modals-contain-supply').children().children('.modals-title').html('收费票据示例');
+        $('#modals-contain-supply').children().children('.modals-text').children('.supply').children('.text').html('患者在治疗期间产生的收费票据，需体现所在医院、费用金额且加盖医院公章的原件照片。');
+        break;
+    }
+  });
+
+  $(".upload-cancel").on("click",function(){
+    $(".mask").addClass("hide");
+    $(this).parent().parent().addClass("hide");
+  });
+   
+</script>
+</div>
+
+    
+<script type="text/javascript" src="js/start/sm.min.js"></script>
+<script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+<script type="text/javascript" src="js/start/sm-city-picker.min.js"></script>
+<script>
+$("#Bbc_address").cityPicker({
+    toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">确定</button><h1 class="title">选择医院地址</h1></header>'
+  });
+</script>
+</body></html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-1">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>发起筹款</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://staticcdn2.zhongtuobang.com/img/ico/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+
+    <!-- SUI CSS -->
+    <link href="css/start/sm.min.css" rel="stylesheet">
+    <link href="css/start/sm-extend.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/start/ztb-wx-common.css" rel="stylesheet">
+
+    <!-- Bbc CSS -->
+    <link href="css/start/ztb-wx-bbc.css" rel="stylesheet">
+
+    <!-- viewer CSS -->
+    <link href="css/start/viewer.min.css" rel="stylesheet">
+
+    <!-- animate CSS -->
+    <link href="css/start/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/start/font-awesome.min.css" rel="stylesheet">
+
+    <!-- SUI JS -->
+    <script src="js/start/hm.js"></script>
+	<script src="js/start/zepto.min.js"></script>
+
+    <!-- viewer JS -->
+    <script src="js/start/viewer.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/start/ztb-wx-common.js"></script>
+    <!-- Bbc JS -->
+    <script src="js/start/ztb-wx-bbc.js"></script>
+
+</head>
+
+<body style="">
+    <div class="page-group">
+		<script src="js/start/jquery-1.11.0.js"></script>
+		<!-- webUploader JavaScript -->
+		<link rel="stylesheet" href="css/start/view.css">
+		<link rel="stylesheet" href="css/start/webuploader.css">
+		<script src="js/start/webuploader.js"></script>
+		<!-- fancyBox JavaScript -->
+		<link rel="stylesheet" href="css/start/jquery.fancybox.min.css">
+		<script src="js/start/jquery.fancybox.min.js"></script>
+		<!-- swiper JavaScript -->
+		<script src="js/start/swiper.min.js"></script>
+		<link rel="stylesheet" href="css/start/create1.css">
+
+		<form enctype="multipart/form-data" id="bbc-form" action="https://bbc.zhongtuobang.com/bbc/create1?s=&amp;back=%E5%B8%AE%E5%B8%AE%E7%88%B1%E5%BF%83%E7%AD%B9" method="post">
+			<div style="position:fixed;top: 0;z-index: 999;width: 100%;height: 24px;background-color: #F3B41D;padding:0 0 0 .8rem;font-size: 12px;color: #fff;line-height: 24px;">
+			  <img src="images/bbc2-top1.png" alt="" width="5%" style="vertical-align: text-bottom">
+			  <span style="vertical-align: middle;">筹款时长默认30天,发布后可随时提前结束</span>
+			</div>
+			<div class="report-sucess">
+				<div class="inner-report-success">
+					<div class="inner-top"><img src="images/bbc-bg.png"><div class="inner-word">恭喜你项目发布成功 ！</div></div>
+					<div class="inner-center">请尽快完成项目验证，增强项目可信度，可大幅提高您转发及筹款效率。</div>
+					<div class="inner-bottom-top"><div class="bottom-dot">•</div><div class="bottom-word">谨记不要相信任何人或公司为您承诺的推广并收取费用的服务，以防诈骗。</div></div>
+					<div class="inner-bottom-bottom"><div class="read-project tjOnClick" tj-data="bbc_click_create1_filllater">查看项目</div>
+						<div class="imd-share tjOnClick" tj-data="bbc_click_create1_fillnow"></div>
+					</div>
+				</div>
+			</div>
+			<div>
+			  <div class="content">
+				<div class="row" style="margin-top: 1.7rem;">
+				  <div class="col-50" style="padding-left: 1rem;">
+					<span>
+					  大病筹款
+					</span>
+				  </div>
+				  <div class="col-50 bbcInfo tjOnClick" tj-data="bbc_click_create1_state" style="padding-left:5rem;">
+					<img src="images/bbc2-c1-1.png" alt="" width="85%">
+				  </div>
+				</div>
+				<div class="list-block" style="margin-top:.3rem;margin-bottom:0">
+				  <ul>
+					<li>
+					  <div class="item-content" style="">
+						<input onkeypress="return /^\d$/.test(String.fromCharCode(event.keyCode||event.keycode||event.which))" oninput="this.value = this.value.replace(/\D+/g, &quot;&quot;)" onpropertychange="if(!/\D+/.test(this.value)){return;};this.value=this.value.replace(/\D+/g, &quot;&quot;)" id="Bbc_targetAmt" name="Bbc[targetAmt]" class="bbc2-input createSubmit" style="padding: 1rem;font-size: 1.5rem;color:#333333;" placeholder="请输入筹款金额" onfocus="this.placeholder=&#39;&#39;;document.getElementById(&#39;Bbc_targetVal&#39;).style.display = &#39;block&#39;" onblur="this.placeholder=&#39;请输入筹款金额&#39;;yuan();" value="" required="">
+					  </div>
+					  <div id="Bbc_targetVal" style="position: absolute; top: 2.3rem; right: 3rem; font-size: 20px; display: none;">元</div>
+					</li>
+					<li>
+					  <div class="row" style="padding-left:1rem;margin-top: 1rem;">
+						  <div class="col-100">
+							<span>筹款标题</span>
+							<a class="bbcTitle tjOnClick" tj-data="bbc_click_create1_howtitle" external="" href="javascript:void(0)"><span style="color: #2097FF;font-size: .7rem;">如何写好标题?</span></a>
+						  </div>
+						<div class="col-100">
+						  <input style="font-size: 16px;padding: .7rem;text-align: left;color:#333333;" id="Bbc_title" name="Bbc[title]" class="bbc2-input createSubmit" placeholder="好的标题会让更多人愿意帮助你。20字以内。" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;好的标题会让更多人愿意帮助你。20字以内。&#39;" value="">
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="row" style="padding-left:1rem;margin-top: 1rem;">
+						<div class="col-100">
+						  <span>筹款说明</span>
+						  <a class="bbcDes tjOnClick" tj-data="bbc_click_create1_howdes" external="" href="javascript:void(0)"><span style="color: #2097FF;font-size: .7rem;">如何写好筹款说明?</span></a>
+						</div>
+						<div class="col-100" style="margin-top: 1rem;">
+						  <textarea style="padding:.7rem;width: 95%;font-size: 16px;color: #333333;background: #F8F8F8;border: none;" name="Bbc[condition]" class="createSubmit" id="Bbc_condition" cols="30" rows="10" placeholder="为帮助大家了解筹款情况，请填写真实的受助人姓名、年龄、工作、家庭情况、所患疾病、治疗状况、报销情况、治疗费用缺口等。300-500字为最佳。" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;为帮助大家了解筹款情况，请填写真实的受助人姓名、年龄、工作、家庭情况、所患疾病、治疗状况、报销情况、治疗费用缺口等。300-500字为最佳。&#39;" required=""></textarea>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner" style="font-size: 12px;color: #666666;">
+						  <div class="content-padded" style="margin-right: 0rem;">
+							<div class="row">
+							  <div class="col-10">
+								<span style="color: #FF2222;font-size: 16px">*</span>
+							  </div>
+							  <div class="col-90" style="margin-left: -.5rem;color: #999999;">
+								<span><span style="color: #000000;">请勿填写任何联系方式和收款信息</span>，包括但不限于微信号、手机号、支付宝账号、银行卡号，否则审核不予通过、善款不得提现。</span>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="list-block" style="margin-top:1rem;margin-bottom:0">
+				  <ul>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner" style="padding-left: .5rem">
+						  <div class="item-title" style="color: ;">患者照片
+							<span class="bbcEffect" style="color: #2097FF;font-size: .7rem;">什么样的图片更有效?</span>
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="content-padded" style="margin-right: 0;margin-bottom: 0;">
+						  <div id="uploader-demo">
+							<!--用来存放item-->
+							<div id="filePicker" class="addPhoto webuploader-container" style="display: inline-block;float: left;height: 4rem;margin-right: 7px;"><div class="webuploader-pick">
+							  <img src="images/bbc2-create3-upd.png" style="width: 3.8rem;display: block;margin-bottom: .1rem;">
+							</div><div id="rt_rt_1c2vefuhh1plh2i21agb1op41u8h1" style="position: absolute; overflow: hidden; bottom: auto; right: auto; width: 97px; height: 100px; top: 0px; left: 0px;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept=""><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
+							<div id="fileList" class="uploader-list" style="display:inline;">
+												</div>
+						  </div>
+						  <!-- /D&D Zone -->
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner" style="font-size: 12px;color: #666666;">
+						  <div class="content-padded" style="margin-right: 0rem;">
+							<div class="row">
+							  <div class="col-10">
+								<span style="color: #FF2222;font-size: 16px">*</span>
+							  </div>
+							  <div class="col-90" style="margin-left: -.5rem;color: #999999;">
+								<span>您选择的<span style="color: #000000;">首张图片将作为标题图、分享图</span> ,建议上传患者  卧病在床、治疗中的照片。</span>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="list-block tjOnClick" tj-data="bbc_click_create1_addmore" style="margin-top:1rem;margin-bottom:0;" id="AddConstraction">
+				  <ul>
+					<li style="text-align: center;padding-bottom: .5rem;">
+					  <div class="item-content" style="margin-bottom: -.5rem">
+						<div class="item-inner">
+						  <div class="item-title label" style="width: 100%;text-align: center;">增信补充说明
+							<img src="images/bbc2-down.png" alt="" width="4%"><br>
+						  </div>
+						</div>
+					  </div>
+					  <span style="color: #999999;font-size: 14px;">(填写该部分内容可提升筹款可信度)</span>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="list-block hide" style="margin-top:0;margin-bottom:0">
+				  <ul>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title"><span><img style="vertical-align: text-bottom" src="images/bbc2-supply-home.png" alt="" width="20"> 患者家属房产状况</span></div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">房产数量</div>
+						  <div class="item-input">
+							<input class="font-14" type="number" placeholder="请输入房产数量" id="Bbc_houseNumber" name="Bbc[houseNumber]" style="font-size:14px;" value="0">
+						  </div>
+						  <div class="item-after">
+							幢
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">房产价格</div>
+						  <div class="item-input">
+							<input class="font-14" type="number" placeholder="请输入房产价格" id="Bbc_houseAmt" name="Bbc[houseAmt]" style="font-size:14px;" value="0">
+						  </div>
+						  <div class="item-after">
+							万元
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">房产状态</div>
+						  <div class="item-input">
+							<select id="Bbc_houseStatus" name="Bbc[houseStatus]" style="font-size:15px;">
+							  <option value="0" selected="">请选择</option>
+							  <option value="1">未变卖</option>
+							  <option value="2">变卖中</option>
+							  <option value="3">已变卖</option>
+							</select>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="list-block hide" style="margin-top:.5rem;margin-bottom:0">
+				  <ul>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title"><span><img style="vertical-align: text-bottom" src="images/bbc2-supply-car.png" alt="" width="20"> 患者家庭车辆财产状况</span></div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">车辆数量</div>
+						  <div class="item-input">
+							<input class="font-14" type="number" placeholder="请填写车辆数量" id="Bbc_carNumber" name="Bbc[carNumber]" style="font-size:14px;" value="0">
+						  </div>
+						  <div class="item-after">
+							辆
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">车辆价格</div>
+						  <div class="item-input">
+							<input class="font-14" type="number" placeholder="请填写车辆价格" id="Bbc_carAmt" name="Bbc[carAmt]" style="font-size:14px;" value="0">
+						  </div>
+						  <div class="item-after">
+							万元
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">车辆状态</div>
+						  <div class="item-input">
+							<select id="Bbc_carStatus" name="Bbc[carStatus]" style="font-size:15px;">
+							  <option value="0" selected="">请选择</option>
+							  <option value="1">未变卖</option>
+							  <option value="2">变卖中</option>
+							  <option value="3">已变卖</option>
+							</select>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="list-block hide" style="margin-top:.5rem;margin-bottom:0">
+				  <ul>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title"><span><img style="vertical-align: text-bottom" src="images/bbc2-supply-safe.png" alt="" width="20"> 患者保险缴纳类型</span></div>
+						</div>
+					  </div>
+					</li>
+					<li>
+					  <div class="item-content">
+						<div class="item-inner">
+						  <div class="item-title label font-14">保险类型</div>
+						  <div class="item-input">
+							<select id="Bbc_isCommercialInsurance" name="Bbc[isCommercialInsurance]" style="font-size:15px;">
+							  <option value="0" selected="">请选择</option>
+							  <option value="1">无</option>
+							  <option value="2">按时缴纳医保</option>
+							  <option value="3">商业重疾保险</option>
+							</select>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+
+				<div class="row hide" style="background: #fff;padding:0 .75rem;padding-bottom: .5rem;">
+				  <div class="col-100">
+					<img src="images/bbc2-danger.png" alt="" width="3%">
+					<span style="color: #999999;font-size: 12px;">发起人承诺，<br>我承诺所提交的文字及图片资料完全属实，无任何虚构事实，隐瞒真相的情况，如有提交信息不实或将筹款用于其它用途，本人愿承担全部法律责任。</span>
+				  </div>
+				</div>
+				
+				<div class="row">
+				  <div class="content-padded" style="text-align:center">
+					<span class="font-14">筹款遇到问题？微信联系筹款顾问:</span><span style="color:#2097FF;font-size: 14px" class="ztbbc tjOnClick" tj-data="bbc_click_create1_service"></span>
+				  </div>
+				</div>
+				
+				<div class="list-block" style="margin-top:0;margin-bottom:0;">
+				  <ul>
+					<li>
+					  <div id="btnSubmit" class="tjOnClick" tj-data="bbc_click_create1_create">
+						<p style="text-align: center">
+						  <span class="button button-big button-round bbc2-button">发起筹款</span>
+						</p>
+					  </div>
+					</li>
+					<li style="padding-bottom: .5rem;">
+					  <div class="row content-padded" style="">
+						<div class="col-10" style="margin-left:0;"><input type="checkbox" name="checkbox" id="hasRead" value="checkbox" checked=""></div>
+						<div class="col-90" style="margin-left:0.1rem;color: #999999;font-size: 12px;">
+						  已经阅读并同意<a href="javascript:void(0)" class="tjOnClick gongyue" tj-data="bbc_click_create1_seerule" external="" style="color: #2097FF;">《春雨筹筹款发起条款》</a></div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+				<input type="hidden" name="process" id="Process" value="">
+			  </div>
+			</div>
+
+<div style="position: absolute;z-index: 9999999;display:none" id="btnClose">
+    <div style="background:#13A8FA;left: 40px;bottom: 40px;height: 50px;width: 50px;border-radius: 100%;box-shadow: 0 2px 0 rgba(0,0,0,.1);text-align: center;line-height: 50px;color: #fff;font-size: 15px;position: fixed;z-index: 99999;cursor: pointer;box-sizing: initial;padding: 0;margin: 0;">
+        <a href="https://bbc.zhongtuobang.com/bbc/create1?s=&amp;back=%E5%B8%AE%E5%B8%AE%E7%88%B1%E5%BF%83%E7%AD%B9#" class="close-popup"><img src="images/popup-close.png" alt="" style="width: 22px;position: absolute;left: 50%;top: 50%;margin-top: -10px;margin-left: -11px;border: 0;vertical-align: middle;"><span style="display: none;">关闭</span></a>
+    </div>
+</div>
+
+<div style="display: none;"><img src="images/bbc-up.png" alt=""> <img src="images/bbc-down.png" alt=""> </div>
+
+<div class="mask hide"></div>
+<div id="modals-contain-id" class="modals-contain hide">
+  <div class="work-box">
+    <div class="upload-cancel">
+      <img src="images/bbc2-create3-cancel.png" alt="">
+    </div>
+    <div class="modals-title">什么样的图片最有效</div>
+    <div class="modals-text" style="height: 15rem;overflow: auto;">
+      <span class="spot">•</span> 	<span class="text">上传的首张照片将作为分享封面图，尽量选择患者人物照片，切记上传血腥的等易引起他人不适的图片。</span>
+      <img src="images/bbc2-create1-ex.png" width="100%">
+      <span class="spot">•</span> 	<span class="text">其他图片在选择上，以能够反应患者病情、家庭情况、相关证明等可提高项目可信度的图片为宜（求助人为患病前生活照）。</span>
+      <img src="images/bbc2-create1-ex3.png" width="100%">
+    </div>
+    <div style="text-align: center;margin: 5px 0 8px 0;">
+      <span style="color: #F44236;">*</span> 	<span style="color: #666666;font-size: 14px;">如有模糊、遮挡，则审核不予通过。</span>
+    </div>
+    <div class="closeAlert button button-large" style="color:#fff;background-color:#2097FF;height:2.2rem;">知道了</div>
+  </div>
+</div>
+<div id="modals-contain-gongyue" class="modals-contain hide">
+  <div class="work-box">
+<!--    <div class="upload-cancel">-->
+<!--      <img src="--><!--/img/bbc2/bbc2-create3-cancel.png" alt="">-->
+<!--    </div>-->
+      <div class="modals-title">项目发起条款</div>
+      <div class="modals-text" style="height: 15rem;overflow: auto;">
+          <span class="text">春雨筹项目发起条款</span><br>
+          <span class="text" style="font-size: 14px;">一．项目发布须知</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>“春雨筹”平台由上海鸿鳄企业管理咨询有限公司（以下简称“平台”）发起并运营，旨在为无力承担医疗费用的家庭和个人提供救助的通道。</p>
+        <p>通过“春雨筹”平台“大病筹款”渠道发布的信息为个人求助信息，非慈善公开募捐项目信息。“春雨筹”仅提供信息发布平台服务，不宣传推广个人求助信息，不向发起人及受助人收取任何费用，不对发起人所发信息的真实性负责，对最终筹款总额不做任何承诺、保证。</p>
+        <p>发起人在通过“春雨筹”发布项目前，须认真阅读本条款，并同意本条款的内容。一旦使用“春雨筹”的求助通道发布筹款项目，将视为同意本条款的所有内容，并愿意接受本条款的约束。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">二．项目发起人加入条件</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>1. 中华人民共和国公民（仅限中国大陆居民）；</p>
+        <p>2. 年满18周岁（未成年人可由其监护人代为发起）；</p>
+        <p>3. 拥有能够在中国地区接收人民币汇款的银行卡；</p>
+        <p>4. 提供必要的身份认证和资质认证，根据项目内容，包括但不限于：身份证、护照等；</p>
+        <p>5. 发起人非受助人本人的，应当提供与受助人的关系证明（如户口簿、结婚证、村委会或居委会出具的关系证明等）；</p>
+        <p>6. 发起人应当按照平台的要求提供受助人相关信息，包括但不限于：身份证正反面照片、受助人照片、加盖医院公章的医院诊断证明照片、医院治疗费用单据、受助人情况说明、受助人家庭收入情况说明、款项使用方向、社区或村委证明等。</p>
+        <p>7. 其他根据项目发起、执行需求相关的必须条件。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">三．项目发布</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>1.项目材料的提交必须保证其真实性、完整性、及时性，保证没有虚构事实或者隐瞒真相的情况，且不存在未经他人授权冒用他人名义进行求助的行为。如果违反上述承诺，或因信息不真实、不完整或信息变更后未及时通知平台，导致的一切后果，用户应自行承担责任，平台概不负责。</p>
+        <p>2.根据相关法律法规，项目提交后，必须经过平台审核后才能发布。</p>
+        <p>3.项目发起人应保证其发布的内容、图片、资料不侵犯任何人的肖像权、隐私权、著作权、商标权、专利权及其他相关权利，如因发起人在项目发起过程中或其发布的内容需向其他人支付许可费用或直接、间接的产生了相关费用，全部由该项目发起人承担。</p>
+        <p>4.根据求助的内容，平台会要求发起人提供相关材料，且有权对发起人提交的材料进行必要的审核。平台认为发起人提供的材料不符合要求的，有权要求发起人补充相关材料。在发起人提供完整材料并经平台审核通过前，平台有权暂缓发布个人求助项目。</p>
+        <p>5.若在筹款期间，平台发现求助人发起的求助信息存在虚假、伪造、隐瞒的现象，有权提前结束求助信息的发布，并将所筹善款原路退回给捐款人。发起人有权提前结束求助信息的发布。</p>
+        <p>6.若受助人在筹款期间身故，发起人须即时通知平台并终止该求助信息的发布。所筹善款将原路退回给捐款人。但若发起人在7日内提供受助人所有的医疗费用单据、经公证的借款合同及借款支付凭证等证明该笔款项确实用于偿还之前支付的医疗费用，筹得善款将支付给受助人的法定继承人。</p>
+        <p>7.根据《互联网信息服务管理办法》第十五条，用户在春雨筹平台发布的项目信息或者使用春雨筹的服务时必须符合中国有关法律法规，不得在春雨筹平台或利用春雨筹的服务制作、复制、发布、传播含有下列内容的信息：</p>
+        <div>
+          <p>反对宪法所确定的基本原则的；</p>
+          <p>危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p>
+          <p>损害国家荣誉和利益的；</p>
+          <p>煽动民族仇恨、民族歧视、破坏民族团结的；</p>
+          <p>破坏国家宗教政策，宣扬邪教和封建迷信的；</p>
+          <p>散步谣言，扰乱社会秩序，破坏社会稳定的；</p>
+          <p>散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</p>
+          <p>侮辱或者诽谤他人，侵害他人合法权益的；</p>
+          <p>煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；</p>
+          <p>以非法民间组织名义活动的；</p>
+          <p>含有法律、行政法规禁止的其他内容的。</p>
+          <p>含有以上内容或相关内容的信息，本平台有权提前结束项目的发布，并将筹得的善款原路退还给捐款人。若已将善款拨付给受助人的，平台有权要求发起人、受助人退还全额已支付款项，并保留追究相应责任的权利。</p>
+        </div>
+      </span>
+          <span class="text" style="font-size: 14px;">四．善款拨付</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>1.经过平台审核后的求助项目（标注为“已审核”），发起人可在求助期间或达到求助目标金额后向平台申请提取已收到的善款，平台将在接到申请后的1个工作日内支付至发起人提供的银行账户，当达到求助目标金额或求助期满后，剩余的善款将在3个工作日内支付至发起人提供的银行账户。若受助人为限制民事行为能力人或无民事行为能力人，平台将支付至受助人的法定监护人银行账户。</p>
+        <p>2.发起人有责任和义务监督善款全部用于受助人的康复治疗。若受助人获得善款后放弃治疗或存在任何挪用、盗用、骗用等行为，平台有权要求发起人、受助人返还全部已支付的善款。返还的善款将全部原路退回捐助人。</p>
+        <p>3.发起人自项目发起之日起，至所有善款使用完毕之日止，平台有权要求发起人提交善款使用说明及相关证明材料。若发起人未能提供平台要求的材料的，平台有权要求发起人、受助人全额返还善款。返还的善款将全部原路退回捐助人。</p>
+        <p>4.拨付善款时，平台收取0%已筹金额的手续费用。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">五．其他说明</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>1.筹款结束时无论项目是否成功，审核通过后都将所筹集到的善款拨付给受助人，如发生筹集过程中求助人过世身故，或已经改变筹款作为治疗用途时，春雨筹有权将所筹资金原路退回。</p>
+        <p>2.筹款过程中，发起人可以根据实际需要调整筹款目标，并进行合理且必要的说明。</p>
+        <p>3.春雨筹平台只在能力范围内协助项目的监督，为有需要的人提供众筹的平台，不负责项目的真实性。</p>
+        <p>4.已经达到筹款目标（以最后一笔筹款为准）的项目不能再进行捐助。</p>
+        <p>5.支持金额最高不能超过项目筹款的目标金额，捐助的金额没有下限。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">六．项目筹款成功</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>春雨筹项目成功是指达到或超出目标金额（最后一笔支持金额导致）后，自动成功，项目结束。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">七．全程公示</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>项目发起人在项目筹款过程中必须实时更新受助人治疗情况，并且在项目筹款结束后，继续更新项目执行情况（包括上传受助人医疗诊断，缴费证明等等），形成结项报告。</p>
+      </span>
+          <span class="text" style="font-size: 14px;">八．责任豁免</span><br>
+          <span class="text" style="font-size: 14px;">
+        <p>发起人在发起项目时，均无条件的同意平台在任何时间内均有权终止项目或内容发布，平台对此产生的相应后果享有的不承担任何赔偿或补偿的责任。</p>
+      </span>
+      </div>
+      <div class="closeAlert button button-large" style="color:#fff;background-color:#2097FF;height:2.2rem;">知道了</div>
+  </div>
+<script>
+
+function yuan(){
+  if($("#Bbc_targetAmt").val() == ''){
+    $('#Bbc_targetVal').css('display','none');
+  }
+}
+
+function validateComment(){
+  if($("#Bbc_targetAmt").val()==""){
+    $.toast("请填写目标金额");
+    return false;
+  }
+  if(isNaN($('#Bbc_targetAmt').val())){
+    $.toast('请输入正确金额!');
+    return false;
+  }
+  if($('#Bbc_targetAmt').val() >= 1000000){
+    $.toast('请输入正确金额！');
+    return false;
+  }
+  if($("#Bbc_title").val()==""){
+    $.toast("请填写筹款标题");
+    return false;
+  }
+  if($("#Bbc_condition").val()==""){
+    $.toast("请填写受助人情况");
+    return false;
+  }
+  if($("#Bbc_title").val().length >= 20){
+    $.toast('筹款标题限制在20字以内！');
+    return false;
+  }
+  if($('#Bbc_houseNumber').val() != 0){
+      if($('#Bbc_houseAmt').val() == 0 || $('#Bbc_houseStatus').val() == 0){
+          $.toast('请完善房产信息!');
+          return false;
+      }
+      if($('#Bbc_carAmt').val() == 0 || $('#Bbc_carStatus').val() == 0){
+        $.toast('请完善车辆信息!');
+        return false;
+      }
+      if($('#Bbc_isCommercialInsurance').val() == 0){
+        $.toast('请选择交纳保险类型!');
+        return false;
+      }
+  }
+  if($('#Bbc_carNumber').val() != 0){
+      if($('#Bbc_carAmt').val() == 0 || $('#Bbc_carStatus').val() == 0){
+          $.toast('请完善车辆信息!');
+          return false;
+      }
+      if($('#Bbc_houseAmt').val() == 0 || $('#Bbc_houseStatus').val() == 0){
+        $.toast('请完善房产信息!');
+        return false;
+      }
+      if($('#Bbc_isCommercialInsurance').val() == 0){
+        $.toast('请选择交纳保险类型!');
+        return false;
+      }
+  }
+  // if(hasPhoto==false){
+  //   alert("请添加图片");
+  //   return false;
+  // }
+
+  if(!$("#hasRead").is(':checked')){//阅读并同意《春雨筹筹款发起条款》
+    $.toast("请阅读并同意《春雨筹筹款发起条款》");
+    return false;
+  }
+    //检查筹款页主图
+    var hasPhoto1;
+    $.ajax({
+      url: '/bbc/hasPhoto',
+      async: false,
+      type: 'GET',
+      dataType: 'json',
+      data: {'id': 7796,'picType': 0},
+      success: function(result) {
+        // get json result
+        hasPhoto1 = result;
+      }
+    });
+    if(!hasPhoto1){
+      $.toast('请上传患者照片！');
+      return false;
+    }
+
+  return true;
+}
+
+//检查上传受助人图片
+var hasPhoto2;
+
+$('#btnSubmit').click(function () {
+  document.location.href = "additional.html";
+  return;
+  if(validateComment()) {
+      $('.inner-word').text('恭喜你项目发布成功 ！');
+      $('.inner-center').text('请尽快完成项目验证，增强项目可信度，可大幅提高您转发及筹款效率。');
+      $('.imd-share').text('立即去验证');
+      $('.report-sucess').css('display','inline');
+      $('.read-project').click(function(){
+          $('#Process').val('2');
+          $('#btnSubmit').closest('form').submit();
+      })
+      $('.imd-share').click(function(){
+          $('#Process').val('1');
+          $('#btnSubmit').closest('form').submit();
+      })
+  }
+});
+
+$('.bbcTitle').on('click',function () {
+    dialog = $.modal({
+        text: '<div><img src="images/bbc2-bbcTitle.png" width="100%"><div class="closeAlert" style="position: absolute;width: 100%;height: 2rem;bottom: 1rem;"></div></div>',
+    });
+    $('.modal-inner').css({'padding':0,'background':'rgba(0,0,0,0)'});
+    $('.modal-in').css('margin-top',' -200px;');
+    $('.closeAlert').click(function(){
+        $.closeModal(dialog);
+    });
+})
+$('.bbcDes').on('click',function () {
+    dialog = $.modal({
+        text: '<div><img src="images/bbc2-bbcDes.png" width="100%"><div class="closeAlert" style="position: absolute;width: 100%;height: 2rem;bottom: 1rem;"></div></div>',
+    });
+    $('.modal-inner').css({'padding':0,'background':'rgba(0,0,0,0)'});
+    $('.modal-in').css('margin-top',' -200px;');
+    $('.closeAlert').click(function(){
+        $.closeModal(dialog);
+    });
+});
+$('.bbcEffect').on('click',function () {
+  $(".mask").removeClass("hide");
+  $("#modals-contain-id").removeClass("hide");
+});
+$('.gongyue').on('click',function () {
+  $(".mask").removeClass("hide");
+  $("#modals-contain-gongyue").removeClass("hide");
+});
+$('.bbcInfo').on('click',function () {
+     var model = $.modal({
+        text:  '<div class="swiper-container" style="padding-bottom:0px;"><div class="swiper-pagination" style="bottom:-6px;"></div>'+
+        '<div class="swiper-wrapper">'+
+        '<div class="swiper-slide" style="width:100%;"><img src="images/bbc2-info-1.png" style="display:block;width:100%"></div>' +
+        '<div class="swiper-slide" style="width:100%;"><img src="images/bbc2-info-2.png" style="display:block;width:100%"></div>'+
+        '<div class="swiper-slide" style="width:100%;"><img src="images/bbc2-info-3.png" style="display:block;width:100%"></div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="closeAlert btn btn-round" style="width: 100%;height: 2rem;bottom: 2rem;"><img src="images/bbc2-know.png" style="display:block;width:100%"></div>',
+        
+    });
+    var mySwiper =  $.swiper('.swiper-container',{
+        auto:3000,
+        pagination: '.swiper-pagination',
+    });
+    $('.modal-inner').css({'padding':0,'background':'rgba(0,0,0,0)'});
+    $('.modal-in').css('margin-top',' -200px;');
+    $('.swiper-slide').css('width','100%');
+    $('.closeAlert').click(function(){
+        $.closeModal(model);
+    });
+    
+});
+$('.ztbbc').on('click',function () {
+  dialog = $.modal({
+    text: '<p style="margin-top:.5em;font-size: ;color:#999999;">长按识别二维码，添加微信客服</p><div><img class="closeAlert" src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-ztbbc.png" width="100%"></div>',
+  });
+  $('.modal-inner').css({'padding-top':'.5em','background':'#fff'});
+  $('.modal-in').css('margin-top',' -150px;');
+  $('.closeAlert').click(function(){
+    $.closeModal(dialog);
+  });
+});
+if(typeof($('#Bbc_targetAmt')) == 'number'){
+    $('#Bbc_targetVal').css('display','block');
+};
+if($('#Bbc_targetAmt').val() == ''){
+  $('#Bbc_targetVal').css('display','none');
+}
+$(document).on('click','#AddConstraction',function () {
+    if($(this).children().children().children().children().children().children().first().attr('src') == 'images/bbc2-down.png'){
+        $(this).children().children().children().children().children().children().first().attr('src','images/bbc2-up.png');
+        $(this).next().removeClass('hide');
+        $(this).next().next().removeClass('hide');
+        $(this).next().next().next().removeClass('hide');
+        $(this).next().next().next().next().removeClass('hide');
+    }else{
+        $(this).children().children().children().children().children().children().first().attr('src','images/bbc2-down.png');
+        $(this).next().addClass('hide');
+        $(this).next().next().addClass('hide');
+        $(this).next().next().next().addClass('hide');
+        $(this).next().next().next().next().addClass('hide');
+    }
+
+});
+
+$('.createSubmit').on('blur',function () {
+  var json_data = {
+    'bbcID':7796,
+    'targetAmt':$('#Bbc_targetAmt').val(),
+    'title':$('#Bbc_title').val(),
+    'condition':$('#Bbc_condition').val(),
+    'houseNumber':$('#Bbc_houseNumber').val(),
+    'houseAmt':$('#Bbc_houseAmt').val(),
+    'carNumber':$('#Bbc_carNumber').val(),
+    'carAmt':$('#Bbc_carAmt').val(),
+  }
+  $.ajax({
+    type:'post',
+    dataType:'json',
+    url:'/bbc/apiSaveCreate1',
+    data:json_data,
+    success:function () {
+      
+    },
+    error:function () {
+      
+    }
+    
+  })
+});
+
+
+$(document).on('click','.open-q1', function () {
+  $.popup('.popup-q1');
+  $('#btnClose').css('display','block');
+});
+
+$('.close-popup').click(function(){
+  $('#btnClose').css('display','none');
+});
+
+var subtitle = "发起筹款";
+$("a").each(function(){
+  var v = $(this).attr("href");
+  if(v.indexOf("javascript")==0){
+  }
+  else if(v.indexOf("#")==0){
+  }
+  else if(v.indexOf("tel")==0){
+  }
+  else if(v.indexOf("back=")>0){
+  }
+  else if(v.indexOf("?")>0){
+    $(this).attr("href",v+"&back="+subtitle);
+  }
+  else{
+    $(this).attr("href",v+"?back="+subtitle);
+  }
+});
+
+$.noConflict();
+
+$(function () {
+//  $.init();
+
+});
+</script>
+
+<script type="text/javascript">
+  //检查是否有主页图
+  /**
+  var hasPhoto1;
+  $.ajax({
+      url: '/bbc/hasPhoto',
+      async: false,
+      type: 'GET',
+      dataType: 'json',
+      data: {'id': 7796,'picType': 0},
+      success: function(result) {
+          hasPhoto1 = result;
+      }
+  });
+  */
+  
+  //####****************************上传受助人图片图片******************************####//
+    var _WebUpload = jQuery,
+        $list = _WebUpload('#fileList'),
+        // 优化retina, 在retina下这个值是2
+        ratio = window.devicePixelRatio || 1,
+
+        // 缩略图大小
+        thumbnailWidth = 38 * ratio,
+        thumbnailHeight = 35 * ratio,
+
+        // Web Uploader实例
+        uploader_1;//上传受助人图片
+    // 初始化Web Uploader
+    uploader_1 = WebUploader.create({
+
+        // 自动上传。
+        auto: true,
+        // 文件接收服务端。
+        server: '/bbc/fileupload',
+
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: {
+            id:'#filePicker',
+            multiple:true,
+        },
+        duplicate:true,
+        threads:6,
+        fileNumLimit:8,
+        formData:{
+            bbcID: 7796,
+            imageType: 1,//主图
+        },
+        // 只允许选择文件，可选。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+//            mimeTypes: 'image/*,text/plain,application/msword,application/octet-stream,application/vnd.ms-excel,application/x-shockwave-flash'
+        }
+    });
+    uploader_1.on('uploadFinished',function () {
+        $.ajax({
+          url: '/bbc/hasPhoto',
+          async: false,
+          type: 'GET',
+          dataType: 'json',
+          data: {'id': 7796,'picType': 0},
+          success: function(result) {
+            hasPhoto1 = result;
+          }
+        });
+        if(hasPhoto1){
+          return false;
+        }
+        console.log($('#fileList').children().first().find('.cancel').attr('imageid'));
+        $.ajax({
+            type:'POST',
+            data:'json',
+            url:'/bbc/mainImage',
+            data:{'bbcimageID':$('#fileList').children().first().find('.cancel').attr('imageid')},
+            success:function () {
+                $('#fileList').children().first().find('.info').html('分享封面图');
+            }
+        })
+    })
+    // 当有文件添加进来的时候
+    uploader_1.on( 'fileQueued', function( file ) {
+      console.log(file);
+        $.ajax({
+            url :'/bbc/hasPhoto1',
+            async: false,
+            type: 'POST',
+            dataType: 'json',
+            data: {'id': 7796},
+            success: function(result) {
+                // get json result
+                hasPhoto2 = result;
+            }
+        })
+        if(hasPhoto2 == true){
+          $('.addPhoto').addClass('hide');
+          return false;
+        }
+        var $li = _WebUpload(
+                '<div id="' + file.id + '" class="file-item thumbnail">' +
+                '<a href="" data-fancybox="group"><img></a>' +
+                '<div class="info">' + file.name + '</div>' +
+                '<div class="cancel" imageType="support">'+
+                '<img src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-delete.png" alt="" width="100%"></div>'
+            ),
+            $img = $li.find('img').first();
+
+        $list.append( $li );
+
+        // 创建缩略图
+        uploader_1.makeThumb( file, function( error, src ) {
+            if ( error ) {
+                $img.replaceWith('<span>不能预览</span>');
+                return;
+            }
+
+            $img.attr( 'src', src );
+        }, thumbnailWidth, thumbnailHeight );
+    });
+    // 文件上传过程中创建进度条实时显示。
+    uploader_1.on( 'uploadProgress', function( file, percentage ) {
+        var $li = _WebUpload( '#'+file.id ),
+            $percent = $li.find('.progress span');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = _WebUpload('<p class="progress"><span></span></p>')
+                .appendTo( $li )
+                .find('span');
+        }
+
+        $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader_1.on( 'uploadSuccess', function( file , response) {
+        _WebUpload( '#'+file.id ).addClass('upload-state-done');
+        _WebUpload( '#'+file.id ).children().filter('.cancel').attr('imageid',response.bbcImageID);
+        _WebUpload( '#'+file.id ).children().filter('a').attr('href','http://osscdn.zhongtuobang.com/bbc/'+response.url+'')
+        if(response.type == '0'){
+            _WebUpload( '#'+file.id ).find('.info').html('分享封面图');
+        };
+        if(response.success == false){
+          /*$.toast('超出限制！');*/
+          $('.addPhoto').addClass('hide');
+          $.toast(response.message);
+          _WebUpload( '#'+file.id ).remove();
+        }
+        jQuery.fancybox.defaults.hash = false;
+        jQuery('[data-fancybox]').fancybox({
+            gutter:0,
+            infobar:false,
+            margin:[0,0],
+        });
+    });
+
+    // 文件上传失败，现实上传出错。
+    uploader_1.on( 'uploadError', function( file ) {
+        var $li = _WebUpload( '#'+file.id ),
+            $error = $li.find('div.error');
+
+        // 避免重复创建
+        if ( !$error.length ) {
+            $error = _WebUpload('<div class="error"></div>').appendTo( $li );
+        }
+
+        $error.text('上传失败');
+    });
+    uploader_1.on('error',function (resule) {
+        if(resule == 'Q_EXCEED_NUM_LIMIT'){
+            $.toast('超出图片上传限制！');
+            return false;
+        }
+    })
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploader_1.on( 'uploadComplete', function( file ) {
+        _WebUpload( '#'+file.id ).find('.progress').remove();
+      uploader_1.refresh();
+    });
+
+
+    //******************************删除图片******************************//
+    $('.cancel').live('click',function () {
+        var bbcvideoID = $(this).attr('imageid');
+        var _this = jQuery(this);
+        $.ajax({
+            url:'/bbc/deleteImg',
+            data:{'bbcimageID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+                $('.addPhoto').removeClass('hide');
+                var dataObj=eval("("+data+")");
+                $(".cancel[imageid='"+dataObj.mainImgID+"']").prev().html('分享封面图');
+                console.log(parseInt(_this.parent().attr('id').replace(/[^0-9]/ig,"")));
+                if(_this.attr('imageType') == 'support'){
+                    console.log('看得懂？！');
+                    uploader_1.removeFile(_this.parent().attr('id'),true);
+                }
+              uploader_1.reset();
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+    $('.reloadCancel').on('click',function () {
+        var bbcvideoID = $(this).prev().attr('id');
+        var _this = $(this);
+        $.ajax({
+            url:'/bbc/deleteImg',
+            data:{'bbcimageID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+                $('.addPhoto').removeClass('hide');
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+
+    $(".upload-cancel,.closeAlert").on("click",function(){
+      $(".mask").addClass("hide");
+      $(this).parent().parent().addClass("hide");
+    });
+</script>
+    </div></form>
+
+    
+<script type="text/javascript" src="js/start/sm.min.js"></script>
+<script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+</div></body></html>

@@ -1,0 +1,479 @@
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* 解决IOS默认滑动很卡的情况 */
+    -webkit-overflow-scrolling: touch;
+    max-width: 640px;
+    margin: 0 auto;
+}
+/*声明 WebFont*/
+@font-face {
+    font-family: 'Knockout-30JuniorWelterwt';
+    src: url('fonts/knockout30.eot');
+    src:
+            url('fonts/knockout30.eot') format('embedded-opentype'),
+            url('fonts/knockout30.woff') format('woff'),
+            url('fonts/knockout30.ttf') format('truetype'),
+            url('fonts/knockout30.svg') format('svg');
+}
+.item-bbc-content {
+    padding: 15px;
+    position: relative
+}
+
+.item-bbc-content .progress-bbc {
+    width: 100%;
+    height: 3px;
+    background: #EAECEE;
+    border-radius: 4px
+}
+
+.item-bbc-content .progress-bbc-percent {
+    max-width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,  #34BAF2 0%,#2097FF 100%);
+    border-radius: 4px
+}
+
+.item-bbc-content .bbc-account {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #2097FF;
+    font-size: 14px;
+}
+.item-bbc-bottom {
+    padding: 0 10px
+}
+
+.item-bbc-bottom ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.item-bbc-bottom li {
+    display: table-cell;
+    width: 33.333%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    border-right: 1px solid #EAECEE;
+    color: #AAA;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.item-bbc-bottom li span {
+    color: #2097FF
+}
+
+.item-bbc-bottom li:last-child {
+    border-right: none
+}
+/*demo样式*/
+#uploader-demo .thumbnail {
+    width: 4rem;
+    height: 4rem;
+}
+#uploader-demo .thumbnail img {
+    width: 100%;
+}
+.uploader-list {
+    width: 100%;
+    overflow: hidden;
+}
+.file-item {
+    float: left;
+    position: relative;
+    padding: 0 4px 0 4px;
+    right:3px;
+}
+.file-item .error {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    background: red;
+    color: white;
+    text-align: center;
+    height: 20px;
+    font-size: 14px;
+    line-height: 23px;
+}
+.file-item .info {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    font-size: 12px;
+    z-index: 10;
+}
+.upload-state-done:after {
+    content:"\f00c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    color: #4cae4c;
+    z-index: 99;
+}
+.file-item .progress {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    height: 3px;
+    left: 4px;
+    height: 4px;
+    overflow: hidden;
+    z-index: 15;
+    margin:0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+}
+.file-item .progress span {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background: #d14 url(../images/progress.png) repeat-x;
+    -webit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    -ms-transition: width 200ms linear;
+    transition: width 200ms linear;
+    -webkit-animation: progressmove 2s linear infinite;
+    -moz-animation: progressmove 2s linear infinite;
+    -o-animation: progressmove 2s linear infinite;
+    -ms-animation: progressmove 2s linear infinite;
+    animation: progressmove 2s linear infinite;
+    -webkit-transform: translateZ(0);
+}
+@-webkit-keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+@-moz-keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+@keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+
+a.travis {
+    position: relative;
+    top: -4px;
+    right: 15px;
+}
+
+.bbc2-input{
+    margin-top:1rem;
+    width: 95%;
+    text-align: center;
+    font-size: 18px;
+    color: #bbbbbb;
+    padding: 0;
+    background: #F8F8F8;
+    border: none;
+}
+.progress-bbc-block{
+    position: absolute;
+    display: table;
+    top: 16px;
+    width: 30px;
+    height: 15px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+.progress-bbc-number{
+    display: table-cell;
+    background: linear-gradient(to right,  #34BAF2 0%,#2097FF 100%);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 9px;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+.bbc2-top{
+    background: #fff;
+    margin-bottom: .4rem;
+}
+.bbc2-top-info{
+    padding-bottom: 20px;
+    margin-top: 15px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    position: relative;
+    width: 92%;
+    margin:0 auto;
+}
+.bbc2-top-info ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 44px 0 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+}
+.bbc2-top-info ul li{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+}
+.pcc-top{
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -2rem;
+    left: 4%;
+    z-index: 99;
+    width: 92%;
+    margin:0 auto;
+    padding: .5rem 0;
+    box-shadow: 0 2px 2px 2px #CBE4FA;
+}
+.pcc-top-info ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+}
+.pcc-top-info ul:before{
+    background: #fff;
+}
+.pcc-top-info ul li{
+    height: 2.3rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-right: 1px solid #e7e7e7;
+    text-align: center;
+}
+.pcc-top-info ul li p{
+    margin:0;
+}
+.list-block .item-inner.bbc2-inner-title:after{
+    background: #fff;
+}
+.bbc2-info-span{
+    position: absolute;
+    right: 24px;
+    top: -2px;
+    width: 36px;
+    height: 40px;
+    background: url(../../images/bbc2-grjz.png) no-repeat center;
+    background-size: cover;
+    text-indent: 1px;
+    color: #fff;
+    font-size:13px;
+    font-weight: 400;
+    z-index: 99;
+    padding-left: 2px;
+}
+.bbc2-data-prove{
+    background: #fff;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.bbc2-data-prove .bbc2-data-one{
+    width: 92%;
+    margin: 0 auto;
+    background: #F8F8F8;
+    padding: 18px 18px 10px 18px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.bbc2-data-prove .bbc2-data-two{
+    width: 92%;
+    margin: 0 auto;
+    background: #F8F8F8;
+    padding: 10px 18px 10px 18px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.bbc2-data-prove .bbc2-data-three{
+    width: 92%;
+    margin: 0 auto;
+    background: #F8F8F8;
+    padding: 18px 18px 10px 18px;
+    border-radius: 0px 0px 5px 5px;
+}
+.bbc2-data-prove .bbc2-data-one .row{
+    font-size:0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.bbc2-data-prove .bbc2-data-two .row{
+    margin-bottom: 5px;
+}
+.bbc2-data-prove .bbc2-data-one .row .col-50 img{
+    vertical-align: text-top;
+}
+.bbc2-data-prove .bbc2-data-one .row .col-50{
+    font-size: 12px;
+}
+.bbc2-data-prove .bbc2-data-two .row p{
+    margin: 0;
+}
+.bbc2-data-prove .bbc2-data-two .row .data-title{
+    font-size: 14px;
+    color: #5d5e60;
+    margin-bottom:5px;
+}
+.bbc2-data-prove .bbc2-data-two .data-info{
+    font-size: 12px;
+    color: #2097ff;
+}
+.bbc2-data-prove .bbc2-data-two .chengnuoshu{
+    font-size: 14px;
+    color: #5D5E60;
+    margin:0;
+    display: inline-block;
+    width: 49%;
+}
+.bbc2-data-prove .bbc2-data-two .cnsContent{
+    font-size:12px;
+    color: #999;
+}
+.bbc2-data-prove .bbc2-data-three p{
+    font-size: 12px;
+    color: #999999;
+}
+.bbc2-data-prove .bbc2-data-three p img{
+    vertical-align: text-top;
+}
+.hide-ul-line:after{
+    background: #fff !important;
+}
+.bbc2-reply-countl{
+    text-align: left;
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+    font-size: 17px;
+}
+.bbc2-reply-countr{
+    text-align: right;
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+    font-size: 14px;
+}
+.bbc2-reply-content{
+    background-color: #F5F5F5;
+    font-size: 14px;
+    padding:10px 15px;
+    color:#999;
+    width: 100% !important;
+}
+.dialogBox:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 15px;
+    top: -6px;
+    border-bottom: 8px solid #f5f5f5;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+.dialogBox-d:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 3px;
+    border-bottom: 8px solid #f5f5f5;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+.dialogBox-p:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 1rem;
+    top: -6px;
+    border-bottom: 8px solid #f5f5f5;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+#comment.list-block ul:before{
+    background-color: #fff;
+}
+#comment.list-block ul:after{
+    background-color: #fff;
+}
+#dongtai.list-block ul:after{
+    background-color: #fff;
+}
+#dongtai.list-block ul:before{
+    background-color: #fff;
+}
+.button.button-big.bbc2-button{
+    width: 90%;
+    color: #fff;
+    background-color: #35A0FB;
+    display: inline-block;
+    border-radius: 5px;
+}
+.bbc2-top1{
+    position:fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 24px;
+    background-color: #0D8F42;
+    padding:0 0 0 .8rem;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+}

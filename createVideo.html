@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-2 retina android android-6 android-6-0">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>春雨筹</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <link rel="shortcut icon" href="http://staticcdn2.zhongtuobang.com/img/ico/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+
+    <!-- SUI CSS -->
+    <link href="css/start/sm.min.css" rel="stylesheet">
+    <link href="css/start/sm-extend.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/start/ztb-wx-common.css" rel="stylesheet">
+
+    <!-- Bbc CSS -->
+    <link href="css/start/ztb-wx-bbc.css" rel="stylesheet">
+
+    <!-- viewer CSS -->
+    <link href="css/start/viewer.min.css" rel="stylesheet">
+
+    <!-- animate CSS -->
+    <link href="css/start/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/start/font-awesome.min.css" rel="stylesheet">
+
+    <!-- SUI JS -->
+	<script src="js/start/zepto.min.js"></script>
+
+    <!-- viewer JS -->
+    <script src="js/start/viewer.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/start/ztb-wx-common.js"></script>
+    <!-- Bbc JS -->
+    <script src="js/start/ztb-wx-bbc.js"></script>
+
+</head>
+
+<body>
+    <div class="page-group">
+            <style type="text/css">
+  .font-12{
+    font-size:12px;
+    color: #999999;
+  }
+</style>
+<form enctype="multipart/form-data" id="bbc-form" action="" method="post">
+<link href="css/start/uploader.css" rel="stylesheet">
+
+<script src="js/start/jquery-1.11.0.js"></script>
+<!-- Uploader JavaScript -->
+<script src="js/start/demo-preview.js"></script>
+<script src="js/start/dmuploader.js"></script>
+
+<div>
+  <div class="content">
+    <div class="list-block" style="margin: 1rem 0;">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              视频说明
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content" style="padding-bottom: 1rem;">
+            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+            <div class="item-inner" style="margin: 0;">
+              <div class="item-input">
+                <textarea id="content" placeholder="对患者的治疗情况进行说明，让更多的人了解，限200字以内" name="" style="height: 7rem;background: #F8F8F8;font-size: 16px;color: #999999;margin-top:.5rem"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="list-block" style="margin-top: 1rem;margin-bottom: 0;">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+                  证实病情属实
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-input" style="padding: .5rem 0;">
+                <div id="drag-and-drop-zone" class="uploader" style="border:0;padding:0;text-align: left;">
+                  <div class="browser">
+                    <img src="images/bbc2-upload-video.png" style="width: 4rem;">
+                    <input type="file" name="files[]" title="Click to add Images" style="border: 0;height: 4rem;">
+                  </div>
+                </div>
+                <div class="panel-body demo-panel-files">
+	                                </div>
+                <div class="panel-body demo-panel-files" id="demo-files1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content">
+            <div class="item-inner" style="font-size: .5rem;">
+              <div class="row">
+                <div class="col-10">
+                  <img src="images/bbc2-danger.png" alt="" width="40%">
+                </div>
+                <div class="col-90" style="margin-left: -2%">
+                  上传一段能够证实受助人病情真实性的视频，有助于提升筹款可信度。建议请主治医师帮忙录制一段视频，证实病情和大概所需要的费用。时长 <span style="color: #E13A2A;">5分钟以内</span> 。
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <di class="row">
+      <div class="col-100" style="text-align: center;margin-left:0;margin-top: 2rem">
+        <img src="images/bbc2-watermark.png" alt="" width="40%">
+      </div>
+    </di>
+
+
+    <div class="row" style="padding: 1rem;margin-top: 100px">
+      <div class="content-padded" style="text-align:center">
+        <span class="font-12"> 筹款遇到问题？微信联系筹款顾问：</span><span style="color:#3AA9FB;font-size: .6rem;" class="ztbbc"></span>
+      </div>
+      <div class="col-100 tjOnClick" tj-data="bbc_click_view_createVideo_submit" id="btnSubmit">
+        <img src="images/bbc2-submit.png" alt="" width="100%">
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+</form><script>
+function validateComment(){
+  if($("#Prove_relationName").val()==""){
+    alert("请选择关系");
+    return false;
+  }
+  if($("#Prove_name").val()==""){
+    alert("请填写姓名");
+    return false;
+  }
+  if($("#Prove_mobile").val()==""){
+    alert("请填写联系电话");
+    return false;
+  }
+  if($("#Prove_idCard").val()==""){
+    alert("请填写身份证号码");
+    return false;
+  }
+  if($("#Prove_idCard").val().length != 18){
+    $.alert("身份证应该是18位字符");
+    return false;
+  }
+  if($("#Prove_comment").val()==""){
+    alert("请填写了解的情况");
+    return false;
+  }
+  return true;
+}
+
+$.noConflict();
+//提交请求
+$('#btnSubmit').on('click',function () {
+  //mark 加入contant
+  contant = $('#content').val();
+  if(contant == ''){
+    $.toast('描述内容不能为空！');
+    return false;
+  }else if(contant.length>200) {
+    $.toast('超出字数限制！');
+    return false;
+  }
+  $.ajax({
+    type:'post',
+    dataType:'json',
+    url:'/bbc/savevideoinfo',
+    data:{'content':$('#content').val(),'bbcID':7910},
+    success:function (data) {
+      if(!data['success']){
+        $.toast(data['message']);
+      }else{
+        $.toast('提交成功');
+        setTimeout("window.location.href = '/bbc/donateView/7910'",1000);
+      }
+    },
+    error:function () {
+      $.toast('网络连接失败！请稍后再试');
+    }
+  })
+})
+
+
+var subtitle = "视频证实";
+$("a").each(function(){
+  var v = $(this).attr("href");
+  if(v.indexOf("javascript")==0){
+  }
+  else if(v.indexOf("#")==0){
+  }
+  else if(v.indexOf("tel")==0){
+  }
+  else if(v.indexOf("back=")>0){
+  }
+  else if(v.indexOf("?")>0){
+    $(this).attr("href",v+"&back="+subtitle);
+  }
+  else{
+    $(this).attr("href",v+"?back="+subtitle);
+  }
+});
+$(function () {
+  //$.init();
+});
+</script>
+
+<script type="text/javascript">
+    
+    //删除图片
+    $('.cancel').live('click',function () {
+        var bbcvideoID = $(this).attr('imageid');
+        var _this = $(this);
+        $.ajax({
+            url:'/bbc/deleteImg',
+            data:{'bbcimageID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+                console.log(parseInt(_this.parent().attr('id').replace(/[^0-9]/ig,"")));
+                uploader_2.removeFile(_this.parent().attr('id'),true);
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+    $('.reloadCancel').on('click',function () {
+        var bbcvideoID = $(this).prev().attr('id');
+        var _this = $(this);
+        $.ajax({
+            url:'/bbc/deleteImg',
+            data:{'bbcimageID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+</script>
+<script type="text/javascript">
+    jQuery('#drag-and-drop-zone').dmUploader({
+      url: '/bbc/fileupload',
+      extraData: {
+        bbcID: 7910,
+        imageType: 7,//视频
+      },
+      maxFileSize: 209712500,
+      dataType: 'json',
+      allowedTypes: '*',
+      onInit: function(){
+        // $.danidemo.addLog('#demo-debug', 'default', 'Plugin initialized correctly');
+      },
+      onBeforeUpload: function(id){
+        // $.danidemo.addLog('#demo-debug', 'default', 'Starting the upload of #' + id);
+  
+        jQuery.danidemo.updateFileStatus(id, 'default', '正在上传...');
+      },
+      onNewFile: function(id, file){
+  
+        jQuery.danidemo.addFile('#demo-files1', id, file);
+        /*** Begins Image preview loader ***/
+        if (typeof FileReader !== "undefined"){
+  
+          var reader = new FileReader();
+  
+          // Last image added
+          var img = jQuery('#demo-files1').find('.demo-image-preview').eq(0);
+  
+          reader.onload = function (e) {
+            img.attr('src', 'http://staticcdn2.zhongtuobang.com/img/wx/bbc/preview.png');
+            img.attr('style', 'width:4rem;height:4rem');
+          }
+  
+          reader.readAsDataURL(file);
+  
+        } else {
+          // Hide/Remove all Images if FileReader isn't supported
+          jQuery('#demo-files1').find('.demo-image-preview').remove();
+        }
+        /*** Ends Image preview loader ***/
+  
+      },
+      onComplete: function(){
+        // $.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');
+      },
+      onUploadProgress: function(id, percent){
+        var percentStr = percent + '%';
+  
+        jQuery.danidemo.updateFileProgress(id, percentStr);
+      },
+      onUploadSuccess: function(id, data){
+        $('#demo-file'+id).append('<div class="cancel btn-danger" imageid="'+data.bbcImageID+'" imageType="video" style="display: inline-block;margin-left: -1rem;margin-top:-2rem;width: 1rem;height: 1rem;text-align: center;position: relative;left: 4rem;top: -6rem;line-height: .8rem;color: #fff;background: #0894ec;border-radius: .5rem;">x</div>');
+      },
+      onUploadError: function(id, message){
+        jQuery.danidemo.updateFileStatus(id, 'error', message);
+  
+        // $.danidemo.addLog('#demo-debug', 'error', 'Failed to Upload file #' + id + ': ' + message);
+      },
+      onFileTypeError: function(file){
+        // $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' cannot be added: must be an image');
+      },
+      onFileSizeError: function(file){
+        // $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' cannot be added: size excess limit');
+      },
+      onFallbackMode: function(message){
+        // $.danidemo.addLog('#demo-debug', 'info', 'Browser not supported(do something else here!): ' + message);
+      }
+    });
+</script>
+
+<script type="text/javascript">
+$('.ztbbc').on('click',function () {
+  dialog = $.modal({
+    text: '<p style="margin-top:.5em;font-size: ;color:#999999;">长按识别二维码，添加微信客服</p><div><img class="closeAlert" src="images/bbc2-ztbbc.png" width="100%"></div>',
+  });
+  $('.modal-inner').css({'padding-top':'.5em','background':'#fff'});
+  $('.modal-in').css('margin-top',' -150px;');
+  $('.closeAlert').click(function(){
+    $.closeModal(dialog);
+  });
+})
+</script>    </div>
+
+    
+<script type="text/javascript" src="js/start/sm.min.js"></script>
+<script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+
+</body></html>

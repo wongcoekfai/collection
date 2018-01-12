@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-2 retina android android-6 android-6-0">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>质疑举报</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <link rel="shortcut icon" href="http://staticcdn2.zhongtuobang.com/img/ico/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://staticcdn2.zhongtuobang.com/img/ico/touch-icon-114.png">
+
+    <!-- SUI CSS -->
+    <link href="css/start/sm.min.css" rel="stylesheet">
+    <link href="css/start/sm-extend.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/start/ztb-wx-common.css" rel="stylesheet">
+
+    <!-- Bbc CSS -->
+    <link href="css/start/ztb-wx-bbc.css" rel="stylesheet">
+
+    <!-- viewer CSS -->
+    <link href="css/start/viewer.min.css" rel="stylesheet">
+
+    <!-- animate CSS -->
+    <link href="css/start/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/start/font-awesome.min.css" rel="stylesheet">
+
+    <!-- SUI JS -->
+	<script src="js/start/zepto.min.js"></script>
+
+    <!-- viewer JS -->
+    <script src="js/start/viewer.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/start/ztb-wx-common.js"></script>
+    <!-- Bbc JS -->
+    <script src="js/start/ztb-wx-bbc.js"></script>
+</head>
+
+<body style="">
+    <div class="page-group">
+            <form enctype="multipart/form-data" id="bbc-form" action="" method="post"><style type="text/css">
+  .font-14{
+    font-size:14px;
+  }
+  .font-12{
+    font-size:12px;
+  }
+</style>
+<!-- Uploader CSS -->
+<link href="css/start/uploader.css" rel="stylesheet">
+
+<script src="js/start/jquery-1.11.0.js"></script>
+<!-- Uploader JavaScript -->
+<script src="js/start/demo-preview.js"></script>
+<script src="js/start/dmuploader.js"></script>
+<!-- Uploader JavaScript -->
+<link rel="stylesheet" href="css/start/webuploader.css">
+<script src="js/start/webuploader.js"></script>
+
+<div class="" style="position: fixed;top: 0;z-index: 999;">
+  <img src="images/bbc2-top6.png" alt="" width="100%">
+</div>
+<div>
+  <div class="content">
+        <div class="list-block" style="margin-top: 1rem;margin-bottom: 0;">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">姓名</div>
+              <div class="item-input">
+                <input class="font-14" type="text" placeholder="请填写您的姓名" id="bbcReport_name" name="bbcReport[name]" style="font-size:14px;" value="0">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">身份证号</div>
+              <div class="item-input">
+                <input class="font-14" type="text" placeholder="请填写您的身份证号" id="bbcReport_idCard" name="bbcReport[idCard]" style="font-size:14px;" value="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label font-14">联系电话</div>
+              <div class="item-input">
+                <input class="font-14" type="text" placeholder="请填写您的联系电话" id="bbcReport_mobile" name="bbcReport[mobile]" style="font-size:14px;" value="">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+        <div class="list-block" style="margin: 1rem 0;">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-100" style="margin-left: 1rem">
+                  填写质疑说明
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content" style="padding-bottom: 1rem;">
+            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+            <div class="item-inner" style="margin: 0;">
+              <div class="item-input">
+                <textarea id="bbcReport_comment" placeholder="请输入您所质疑的内容依据，举报内容需在30-300字之间。" name="bbcReport[comment]" style="height: 10rem;background: #F8F8F8;font-size: 12px;color: #999999;"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <div class="list-block" style="margin-top: 1rem;margin-bottom: 0;">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-100" style="margin-left: 1rem">
+                  举报质疑证据照片（最多8张）
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-input" style="padding: .5rem 0;">
+                <div id="uploader-demo">
+                  <!--用来存放item-->
+                  <div id="fileList" class="uploader-list" style="padding-top: .5rem;"></div>
+                  <div id="filePicker" class="tjOnClick webuploader-container" tj-data="bbc_click_view_bbcreport_uppic"><div class="webuploader-pick">
+                    <img src="images/bbc2-uploadr.png" style="width: 4rem;">
+                  </div><div id="rt_rt_1c3b9pblj1lua1m9v1lkr1jap1b101" style="position: absolute; overflow: hidden; bottom: auto; right: auto; width: 80px; height: 88px; top: 0px; left: 0px;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept=""><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
+                </div>
+                <div class="panel-body demo-panel-files">
+                                  </div>
+                <div class="panel-body demo-panel-files" id="demo-files1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                <span style="color:#E13A2A;font-size: 14px;">*</span><span style="font-size: 12px;color: #999999;">图片内容需清晰可见以保证您所述信息的真实性。</span>
+
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="row" style="padding: 1rem">
+      <div class="content-padded col-100" style="text-align:center">
+        <span class="font-12"> 筹款遇到问题？微信联系筹款顾问：</span><span style="color:#3AA9FB;font-size: .6rem;" class="ztbbc">ZTBBC2017</span>
+      </div>
+      <div class="col-100 tjOnClick" tj-data="bbc_click_view_bbcreport_submit" id="btnSubmit">
+        <img src="images/bbc2-submit.png" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</form><script>
+$('.ztbbc').on('click',function () {
+  dialog = $.modal({
+    text: '<p style="margin-top:.5em;font-size: ;color:#999999;">长按识别二维码，添加微信客服</p><div><img class="closeAlert" src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-ztbbc.png" width="100%"></div>',
+  });
+  $('.modal-inner').css({'padding-top':'.5em','background':'#fff'});
+  $('.modal-in').css('margin-top',' -150px;');
+  $('.closeAlert').click(function(){
+    $.closeModal(dialog);
+  });
+});
+function validateComment(){
+  if($("#bbcReport_comment").val()==""){
+    $.toast("请填写质疑说明情况");
+    return false;
+  }
+  return true;
+}
+
+//$('#btnSubmit').click(function () {
+//
+//  if(validateComment()){
+//    $(this).attr("class","button button-big button-fill button-round button-light");
+//    $(this).closest('form').submit();
+//  }
+//
+//});
+
+//$(function () {
+
+//  //picker
+//    $("#Prove_relationName").picker({
+//      toolbarTemplate: '<header class="bar bar-nav">\
+//      <button class="button button-link pull-right close-picker">\
+//      确定\
+//      </button>\
+//      <h1 class="title">与受助人关系</h1>\
+//      </header>',
+//      cols: [
+//        {
+//          textAlign: 'center',
+//          values: ['亲人', '朋友', '邻居', '同事', '老师','同学','病友','医护','志愿者','项目参与者'],
+//          cssClass: 'picker-items-col-normal'
+//        }
+//      ]
+//    });
+//  });
+
+$.noConflict();
+$('#btnSubmit').on('click',function () {
+    if(validateComment()){
+    $('#btnSubmit').closest('form').submit();
+    }
+})
+
+
+var subtitle = "质疑举报";
+$("a").each(function(){
+  var v = $(this).attr("href");
+  if(v.indexOf("javascript")==0){
+  }
+  else if(v.indexOf("#")==0){
+  }
+  else if(v.indexOf("tel")==0){
+  }
+  else if(v.indexOf("back=")>0){
+  }
+  else if(v.indexOf("?")>0){
+    $(this).attr("href",v+"&back="+subtitle);
+  }
+  else{
+    $(this).attr("href",v+"?back="+subtitle);
+  }
+});
+$(function () {
+  //$.init();
+});
+</script>
+
+<script type="text/javascript">
+    var _WebUpload = jQuery,
+        $list = _WebUpload('#fileList'),
+        // 优化retina, 在retina下这个值是2
+        ratio = window.devicePixelRatio || 1,
+
+        // 缩略图大小
+        thumbnailWidth = 120 * ratio,
+        thumbnailHeight = 120 * ratio,
+
+        // Web Uploader实例
+        uploader_1;//上传动态图片
+    // 初始化Web Uploader
+    uploader_1 = WebUploader.create({
+
+        // 自动上传。
+        auto: true,
+        // 文件接收服务端。
+        server: '/bbc/fileupload',
+
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: {
+            id:'#filePicker',
+            multiple:true,
+        },
+        duplicate:true,
+        threads:6,
+        fileNumLimit:8,
+        formData:{
+            bbcID: 7817,
+            bbcReportID: 2883,
+            imageType: 'reportImage',//新动态图片描述
+        },
+        // 只允许选择文件，可选。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+//            mimeTypes: 'image/*,text/plain,application/msword,application/octet-stream,application/vnd.ms-excel,application/x-shockwave-flash'
+        }
+    });
+
+    // 当有文件添加进来的时候
+    uploader_1.on( 'fileQueued', function( file ) {
+        var $li = _WebUpload(
+                '<div id="' + file.id + '" class="file-item thumbnail">' +
+                '<img>' +
+                '<div class="info">' + file.name + '</div>' +
+                '<div class="cancel" imageType="bbcReport" style="display: inline-block;margin-left: -1rem;margin-top:-2rem;width: 1rem;height: 1rem;text-align: center;position: relative;right: -.1rem;bottom: 3rem;">'+
+                '<img src="https://staticcdn2.zhongtuobang.com/img/bbc2/bbc2-delete.png" alt="" width="100%"></div>'
+            ),
+            $img = $li.find('img').first();
+
+        $list.append( $li );
+
+        // 创建缩略图
+        uploader_1.makeThumb( file, function( error, src ) {
+            if ( error ) {
+                $img.replaceWith('<span>不能预览</span>');
+                return;
+            }
+
+            $img.attr( 'src', src );
+        }, thumbnailWidth, thumbnailHeight );
+    });
+
+    // 文件上传过程中创建进度条实时显示。
+    uploader_1.on( 'uploadProgress', function( file, percentage ) {
+        var $li = _WebUpload( '#'+file.id ),
+            $percent = $li.find('.progress span');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = _WebUpload('<p class="progress"><span></span></p>')
+                .appendTo( $li )
+                .find('span');
+        }
+
+        $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader_1.on( 'uploadSuccess', function( file , response) {
+        _WebUpload( '#'+file.id ).addClass('upload-state-done');
+        _WebUpload( '#'+file.id ).children().filter('.cancel').attr('imageid',response.bbcImageID);
+        if(response.type == '0'){
+            _WebUpload( '#'+file.id ).find('.info').html('分享封面图');
+        }
+    });
+
+    // 文件上传失败，现实上传出错。
+    uploader_1.on( 'uploadError', function( file ) {
+        var $li = _WebUpload( '#'+file.id ),
+            $error = $li.find('div.error');
+
+        // 避免重复创建
+        if ( !$error.length ) {
+            $error = _WebUpload('<div class="error"></div>').appendTo( $li );
+        }
+
+        $error.text('上传失败');
+    });
+    uploader_1.on('error',function (resule) {
+        if(resule == 'Q_EXCEED_NUM_LIMIT'){
+            $.toast('超出图片上传限制！');
+            return false;
+        }
+    })
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploader_1.on( 'uploadComplete', function( file ) {
+        _WebUpload( '#'+file.id ).find('.progress').remove();
+    });
+    
+    //删除图片
+    $('.cancel').live('click',function () {
+        var bbcvideoID = $(this).attr('imageid');
+        var _this = $(this);
+        $.ajax({
+            url:'/bbc/deleteReportImg',
+            data:{'bbcDailyImgID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+                var dataObj=eval("("+data+")");
+                console.log(parseInt(_this.parent().attr('id').replace(/[^0-9]/ig,"")));
+                uploader_1.removeFile(_this.parent().attr('id'),true);
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+    $('.reloadCancel').on('click',function () {
+        var bbcvideoID = $(this).prev().attr('id');
+        var _this = $(this);
+        $.ajax({
+            url:'/bbc/deleteReportImg',
+            data:{'bbcDailyImgID':bbcvideoID},
+            type:'POST',
+            success:function (data) {
+                _this.parent().remove();
+                $.toast('文件删除成功');
+
+            },
+            error:function (data) {
+                $.toast('文件删除失败');
+            }
+        })
+    });
+</script>    </div>
+
+    
+<script type="text/javascript" src="js/start/sm.min.js"></script>
+<script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+</body></html>
