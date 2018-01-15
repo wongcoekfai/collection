@@ -148,8 +148,24 @@
 	<div class="submit_button">
 		立即获取春雨救助金
 	</div>
-
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type="text/javascript" src="js/start/sm.min.js"></script>
 <script type="text/javascript" src="js/start/sm-extend.min.js"></script>
+
+<script>
+    $(function() {
+	    $(".submit_button").click(function() {
+		    dialog = $.modal({
+				// title: '<div style="padding-top:10px;">救助金详情</div>',
+				text: '<div style="padding:20px 10px 10px 10px;">我们已经收到您的救助金申请，届时会有客服人员与您电话联系，请保持电话通畅，谢谢。</div>',
+				afterText: '<div class="closeAlert"></div>'
+			});
+			$('.modal-inner').css({'padding':0,'background':'#fff'});
+			$('.closeAlert').parents(".modal-inner").click(function(){
+				$.closeModal(dialog);
+			});
+		});
+	});
+</script>
 </body>
 </html>
